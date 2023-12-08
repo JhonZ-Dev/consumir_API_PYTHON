@@ -20,3 +20,6 @@ def index():
             tabla_html += f'<tr><td>{dato["nombre"]}</td><td>{dato["valor"]}</td></tr>'
 
         tabla_html += '</table>'
+        
+         # Utilizamos Flask para renderizar el HTML
+        return render_template_string(tabla_html)
