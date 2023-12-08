@@ -13,3 +13,5 @@ def index():
     if response.status_code == 200:
         # Paso 2: Procesar los datos de la API (supongamos que la API devuelve datos en formato JSON)
         datos_api = response.json()
+# Paso 3: Generar el código HTML
+        tabla_html = '<table border="1"><tr><th>Nombre</th><th>Valor</th></tr>'
