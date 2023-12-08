@@ -23,3 +23,6 @@ def index():
         
          # Utilizamos Flask para renderizar el HTML
         return render_template_string(tabla_html)
+    
+    else:
+        return f'Error al obtener datos de la API. Código de estado: {response.status_code}'
