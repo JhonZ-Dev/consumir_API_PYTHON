@@ -16,7 +16,8 @@ def index():
 # Paso 3: Generar el código HTML
         tabla_html = '<table border="1"><tr><th>Nombre</th><th>Valor</th></tr>'
         
-       
+        for dato in datos_api:
+            tabla_html += f'<tr><td>{dato["nombre"]}</td><td>{dato["valor"]}</td></tr>'
 
         tabla_html += '</table>'
         
