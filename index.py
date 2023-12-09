@@ -6,7 +6,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Paso 1: Hacer la solicitud a la API
-   
+    api_url = 'https://ejemplo.com/api/datos'
+    response = requests.get(api_url)
     
     # Verificar si la solicitud fue exitosa (código de estado 200)
     if response.status_code == 200:
